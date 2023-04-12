@@ -1,6 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
+  max-width: 1600px;
   font-family: roboto, sans-serif;
   color: var(--brand-black);
+  margin: 0 auto;
+}
+ul {
+  list-style-type: none;
+  list-style: none;
 }
 
 :root {
@@ -58,24 +68,42 @@ body {
 }
 
 /* SECTION with button */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .section-box {
   background-color: var(--brand-background-dark);
 }
-
+.title-box {
+  max-height: 600px;
+  flex-direction: column;
+  align-items: center;
+  /* align-items: center; */
+  display: flex;
+  /* padding-top: 200px; */
+}
 .h1 {
+  display: block;
   color: var(--just-white);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
+  padding-top: 200px;
 }
 
 .button {
+  display: block;
+  width: 200px;
+  height: 50px;
   font-family: roboto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
   align-items: center;
   text-align: center;
   color: var(--just-white);
@@ -83,9 +111,28 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  margin-bottom: 200px;
+  margin-top: 30px;
 }
 
 /*  LOREM IPSUM */
+ul {
+  list-style-type: none;
+  list-style: none;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.loremIpsum-flex {
+  display: flex;
+  /* align-self: center; */
+  gap: 30px;
+  /* margin-top: 94px; */
+}
+
 .lorem-heading {
   font-weight: 700;
   font-size: 14px;
