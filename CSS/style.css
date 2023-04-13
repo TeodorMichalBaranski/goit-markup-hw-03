@@ -25,6 +25,23 @@ ul {
   --just-white: rgb(255, 255, 255);
 }
 /*  HEADER */
+
+.top-background {
+  border-bottom: 1px solid rgb(236, 236, 236);
+  height: 80px;
+}
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+}
+.header-nav-flex {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 46px;
+}
 .web {
   font-family: Raleway;
   font-size: 26px;
@@ -269,7 +286,8 @@ ul {
 }
 /* .web-studio-padding {
   padding-bottom: 60px;;
-} */
+*/
+.address {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
