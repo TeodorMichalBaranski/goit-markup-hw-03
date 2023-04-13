@@ -1,7 +1,10 @@
 * {
   box-sizing: border-box;
 }
-
+ul {
+  list-style-type: none;
+  list-style: none;
+}
 body {
   max-width: 1600px;
   font-family: roboto, sans-serif;
@@ -68,6 +71,11 @@ ul {
 }
 
 /* SECTION with button */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .container {
   max-width: 1200px;
   width: 100%;
@@ -116,19 +124,16 @@ ul {
 }
 
 /*  LOREM IPSUM */
-ul {
-  list-style-type: none;
-  list-style: none;
-}
+
 .container {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
-.loremIpsum-flex {
+.loremipsum-flex {
   display: flex;
-  /* align-self: center; */
+  align-self: center;
   gap: 30px;
   /* margin-top: 94px; */
 }
@@ -146,14 +151,42 @@ ul {
   letter-spacing: 0.03em;
   color: var(--brand-grey);
 }
+
+/* CZYM SIE ZAJMUJEMY */
+
 .section-heading {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--brand-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.czym-sie-flex {
+  display: flex;
+  gap: 30px;
+  text-align: center;
+  justify-content: center;
+}
+
 /* NASZ ZESPOL */
+.nasz-zespol-flex {
+  display: flex;
+  gap: 30px;
+  text-align: center;
+  justify-content: center;
+}
+.picture {
+  padding: 0;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .team-person {
   font-size: 16px;
   font-weight: 500;
@@ -171,6 +204,14 @@ ul {
 }
 
 /* Portfolio */
+
+.buttonpflex {
+  display: flex;
+  gap: 30px;
+  text-align: center;
+  justify-content: center;
+}
+
 .buttonp {
   font-family: roboto;
   background-color: #f5f4fa;
@@ -193,6 +234,19 @@ ul {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* -> FOTO DESCRIPTION*/
+
+.picturesp-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  /* align-content: space-around; */
+}
+.imgp {
+  border: 1px solid #eeeeee;
+  flex-basis: calc((100% - 3 * 30px) / 3);
+}
 .proj-description {
   font-size: 18px;
   font-weight: 700;
@@ -213,7 +267,9 @@ ul {
 .footer {
   background-color: var(--brand-background-dark);
 }
-.address {
+/* .web-studio-padding {
+  padding-bottom: 60px;;
+} */
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
