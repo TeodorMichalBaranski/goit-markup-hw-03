@@ -28,7 +28,7 @@ ul {
 
 .top-background {
   border-bottom: 1px solid rgb(236, 236, 236);
-  height: 80px;
+  /* height: 80px; */
 }
 .header-flex {
   display: flex;
@@ -36,6 +36,7 @@ ul {
   /* justify-content: space-between;
   align-content: center; */
   padding-top: 24px;
+  padding-bottom: 25px;
   /* padding-left: 15px; */
 }
 .header-nav-flex {
@@ -105,58 +106,50 @@ ul {
   padding-bottom: 94px;
 }
 
-.container {
-  max-width: 1200px;
-  width: 100%;
-  /* margin: 0 auto; */
-  /* padding: 0 15px; */
-}
-
 .section-box {
   background-color: var(--brand-background-dark);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .title-box {
   max-height: 600px;
   flex-direction: column;
   align-items: center;
-  /* align-items: center; */
   display: flex;
-  /* padding-top: 200px; */
 }
 .h1 {
-  display: block;
+  /* display: block; */
   color: var(--just-white);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
-  padding-top: 200px;
 }
 
 .button {
-  display: block;
+  /* display: block; */
   /* width: 200px;
   height: 50px; */
   font-family: roboto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  align-items: center;
+  /* align-items: center; */
   text-align: center;
   color: var(--just-white);
   background: var(--brand-blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  margin-bottom: 200px;
   margin-top: 30px;
+  padding: 10px 40px;
 }
 
 /*  LOREM IPSUM */
 
 .container {
-  max-width: 1200px;
-  width: 100%;
+  width: 1200px;
+  /* width: 100%; */
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -164,7 +157,7 @@ ul {
   display: flex;
   align-self: center;
   gap: 30px;
-  /* margin-top: 94px; */
+  /* width: 100%; */
 }
 
 .lorem-heading {
@@ -174,16 +167,19 @@ ul {
   letter-spacing: 0.03em;
   color: var(--brand-black);
   text-align: left;
-  margin: 89px 0 10px 0;
 }
 .lorem-content {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--brand-grey);
+  text-align: left;
 }
 
 /* CZYM SIE ZAJMUJEMY */
+.section-new {
+  padding-top: 0px;
+}
 
 .section-heading {
   font-size: 36px;
