@@ -1,7 +1,11 @@
 * {
   box-sizing: border-box;
 }
-
+h1,
+ul {
+  margin: 0;
+  padding: 0;
+}
 ul {
   list-style-type: none;
   list-style: none;
@@ -148,14 +152,15 @@ ul {
 /*  LOREM IPSUM */
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   /* width: 100%; */
   margin: 0 auto;
   padding: 0 15px;
 }
 .loremipsum-flex {
   display: flex;
-  align-self: center;
+  justify-content: center;
+  align-self: auto;
   gap: 30px;
   /* width: 100%; */
 }
@@ -193,7 +198,7 @@ ul {
   margin: 0 0 50px 0;
 }
 
-.czym-sie-flex {
+.what-we-do-flex {
   display: flex;
   gap: 30px;
   text-align: center;
@@ -202,11 +207,11 @@ ul {
 
 /* NASZ ZESPOL */
 
-.nasz-zespol-backgroundcolor {
+.our-team-backgroundcolor {
   background-color: rgba(245, 244, 250, 1);
 }
 
-.nasz-zespol-flex {
+.our-team-flex {
   display: flex;
   gap: 30px;
   text-align: center;
@@ -239,10 +244,12 @@ ul {
 }
 
 /* Portfolio */
-
+.section-padd-bottom-50 {
+  padding-bottom: 50px;
+}
 .buttonpflex {
   display: flex;
-  gap: 30px;
+  gap: 8px;
   text-align: center;
   justify-content: center;
 }
@@ -278,15 +285,21 @@ ul {
   padding: 0;
   /* align-content: space-around; */
 }
-.imgp {
-  /* border-right: 1px solid #eeeeee; */
+
+.description-portfolio {
+  padding: 20px 24px 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-  /* border-left: 1px solid #eeeeee; */
-  flex-basis: auto;
-  /* flex-basis: calc((100% - 3 * 30px) / 3); */
-  /* width: auto; */
 }
-.proj-description {
+/* .imgp {
+  /* border-right: 1px solid #eeeeee; */
+border-bottom: 1px solid #eeeeee;
+/* border-left: 1px solid #eeeeee; */
+flex-basis: auto;
+/* flex-basis: calc((100% - 3 * 30px) / 3); */
+/* width: auto; */
+*/ .proj-description {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
